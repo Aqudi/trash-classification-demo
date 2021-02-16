@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-분리배출 데모</title>
+    <link rel="stylesheet" href="./iphone.css">
+    <link rel="stylesheet" href="./iphone_icon.css">
+    <link rel="stylesheet" href="./k_icon.css">
+    <link rel="stylesheet" href="./loading.css">
+    <link rel="stylesheet" href="./common.css">
+
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- 퍼센트 보여주는 바 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"
+        integrity="sha512-EZhmSl/hiKyEHklogkakFnSYa5mWsLmTC4ZfvVzhqYNLPbXKAXsjUYRf2O9OlzQN33H0xBVfGSEIUeqt9astHQ=="
+        crossorigin="anonymous"></script>
+
+    <!--메인 -->
+    <div class="wrapper">
+        <div class="iphone">
+            <div class="power"></div>
+            <div class="lock"></div>
+            <div class="volume up"></div>
+            <div class="volume down"></div>
+            <div class="camera"></div>
+            <div class="speaker"></div>
+            <div class="screen">
+                <div class="column">
+                    <div class="app-bar">
+                        <div class="row between">
+                            <div class="column center">
+                                <h1>분리배출의 민족</h1>
+                            </div>
+                            <div class="column center">
+                                <span class="hambuger">
+                                    <i class="fa fa-bars"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loading">
+                        <div class="lds-roller">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="column center fullwidth">
+                        <div class="row webcam-wrapper">
+                            <div id="webcam-container"></div>
+                        </div>
+                        <div class="row">
+                            <div id="best"></div>
+                        </div>
+                        <div class="row">
+                            <div id="label-container">
+                                <!-- <div class="item-container">
+                                    <span id="item-lable${i}" class="item-lable"></span>
+                                    <div id="item${i}" class="item ldBar label-right" style="width:100%;height:30px">
+                                    </div>
+                                    <span id="item-value${i}" class="item-value ldBar label-right"></span>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+        <script src="./classifier.js"></script>
+
+</body>
+
+</html>

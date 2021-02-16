@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-분리배출 데모</title>
+    <link rel="stylesheet" href="./iphone.css">
+    <link rel="stylesheet" href="./iphone_icon.css">
+    <link rel="stylesheet" href="./k_icon.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./loading.css">
+    <style>
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .column {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="iphone">
+            <div class="power"></div>
+            <div class="lock"></div>
+            <div class="volume up"></div>
+            <div class="volume down"></div>
+            <div class="camera"></div>
+            <div class="speaker"></div>
+            <div class="screen">
+                <div class="column">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <h1>
+                            분리배출의 민족
+                        </h1>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <img src="delete.png">
+                    </div>
+                    <div class="row">
+                        <div class="loading">
+                            <div class="lds-roller">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <div class="square"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = () => {
+            setTimeout(() => {
+                window.location.href = "./page2.html";
+            }, 1500);
+        }
+    </script>
+</body>
+
+</html>
